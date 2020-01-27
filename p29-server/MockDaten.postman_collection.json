@@ -1,0 +1,792 @@
+{
+	"info": {
+		"_postman_id": "e4ce1300-7ea1-43ba-8824-752781bb0a68",
+		"name": "MockDaten",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Step 1: POST a Thing",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"TestSensor2\",\t\n  \"description\": \"Der zweite Counter!\",\n  \"properties\": {\n    \"sensor_id\": \"2\",\n    \"position\": \"Balkon\"\n },\n  \"Locations\": [\n    {\n      \"name\": \"Saarbrücken Uni\",\n      \"encodingType\": \"application/vnd.geo+json\",\n      \"description\": \"Saarbrücken Uni\",\n      \"location\": {\"coordinates\":[7.0477,49.2575],\"type\":\"Point\"}\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Things",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Things"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 1: POST a Thing 2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"TestSensor2\",\t\n  \"description\": \"Der zweite Counter!\",\n  \"properties\": {\n    \"sensor_id\": \"2\",\n    \"position\": \"Balkon\"\n },\n  \"Locations\": [\n    {\n      \"name\": \"Saarbrücken Uni\",\n      \"encodingType\": \"application/vnd.geo+json\",\n      \"description\": \"Saarbrücken Uni\",\n      \"location\": {\"coordinates\":[7.0477,49.2575],\"type\":\"Point\"}\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Things",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Things"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 1: POST a Thing 3",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"TestSensor2\",\t\n  \"description\": \"Der zweite Counter!\",\n  \"properties\": {\n    \"sensor_id\": \"2\",\n    \"position\": \"Balkon\"\n },\n  \"Locations\": [\n    {\n      \"name\": \"Saarbrücken Uni\",\n      \"encodingType\": \"application/vnd.geo+json\",\n      \"description\": \"Saarbrücken Uni\",\n      \"location\": {\"coordinates\":[7.0477,49.2575],\"type\":\"Point\"}\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Things",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Things"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 2: POST an ObservedProperty",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n  \"name\": \"Anzahl Insekten\",\n  \"description\": \"Anzahl Insekten\",\n  \"definition\": \"Dictionary mit InsektenArt Key und Anzahl Value\"\n}\n"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/ObservedProperties",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"ObservedProperties"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 3: POST a Sensor",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\":\"Optisches Mikrofon\",\n  \"encodingType\": \"application/pdf\",\n  \"metadata\": \"webseite sensor oder von uns mit ml model version?.pdf\",\n  \"description\": \"Der Sensor für die Aufnahme\"\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Sensors",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 4: POST an new Datastream",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Gezählte Insekten\",\n  \"unitOfMeasurement\": {\n    \"name\": \"Zeitpunkt\",\n    \"symbol\": \"String\",\n    \"definition\": \"Zeitpunkt eines Insekt\"\n  },\n  \"Thing\": {\n    \"@iot.id\": 1\n  },\n  \"description\": \"Datastream für die gezählten Insekten (Zeitpunkt)\",\n  \"Sensor\": {\n    \"@iot.id\": 1\n  },\n  \"ObservedProperty\": {\n    \"@iot.id\": 1\n  },\n  \"observationType\": \"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation\"\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Datastreams",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Datastreams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 4: POST an new Datastream 2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Gezählte Insekten\",\n  \"unitOfMeasurement\": {\n    \"name\": \"Zeitpunkt\",\n    \"symbol\": \"String\",\n    \"definition\": \"Zeitpunkt eines Insekt\"\n  },\n  \"Thing\": {\n    \"@iot.id\": 1\n  },\n  \"description\": \"Datastream für die gezählten Insekten (Zeitpunkt)\",\n  \"Sensor\": {\n    \"@iot.id\": 1\n  },\n  \"ObservedProperty\": {\n    \"@iot.id\": 1\n  },\n  \"observationType\": \"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation\"\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Datastreams",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Datastreams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 4: POST an new Datastream 3",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Gezählte Insekten\",\n  \"unitOfMeasurement\": {\n    \"name\": \"Zeitpunkt\",\n    \"symbol\": \"String\",\n    \"definition\": \"Zeitpunkt eines Insekt\"\n  },\n  \"Thing\": {\n    \"@iot.id\": 1\n  },\n  \"description\": \"Datastream für die gezählten Insekten (Zeitpunkt)\",\n  \"Sensor\": {\n    \"@iot.id\": 1\n  },\n  \"ObservedProperty\": {\n    \"@iot.id\": 1\n  },\n  \"observationType\": \"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation\"\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Datastreams",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Datastreams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 5: POST an new Observation",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"result\": \"Fliege\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Observations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 5: POST an new Observation 2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"result\": \"Fliege\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Observations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 5: POST an new Observation 3",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"result\": \"Fliege\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Observations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 5: POST an new Observation 21",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"result\": \"Biene\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Observations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 5: POST an new Observation 22",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"result\": \"Biene\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Observations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 5: POST an new Observation 23",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"result\": \"Biene\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Observations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 5: POST an new Observation 31",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"result\": \"Heimchen\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Observations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 5: POST an new Observation 32",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"result\": \"Heimchen\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Observations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 5: POST an new Observation 33",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"result\": \"Heimchen\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Observations"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

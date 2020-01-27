@@ -1,0 +1,25 @@
+${create_user_v ? `
+
+<h1>${locals.create_user}</h1>
+<form class="pure-form pure-form-aligned" id="create_user" name="create_user" action="/users" method="post">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" pattern=".+@.+" required/>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" name="password" minlength=8 required/>
+        </div>
+        <div class="pure-controls">
+            <label for="cb" class="pure-checkbox">
+				<input id="cb" type="checkbox" required> ${locals.terms} 
+            </label>
+
+			<button type="submit" class="pure-button pure-button-primary">${locals.create_user}</button>
+        </div>
+    </fieldset>
+</form>
+
+` : ''}

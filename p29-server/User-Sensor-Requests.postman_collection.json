@@ -1,0 +1,614 @@
+{
+	"info": {
+		"_postman_id": "bb44b95f-7b67-4e28-9e95-4483cd8c7b3f",
+		"name": "User-Sensor-Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "test@test.de",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "jest@jestmail3.de",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "jester123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "test@test.de",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "jest@jestmail3.de",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "jester123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "new_email",
+							"value": "jest@jestmail3.de",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "jester123",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jest@jestmail3.de",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "jester123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/put",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"put"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout a user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "jest@jestmail3.de",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "jester123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 1: POST a Thing",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"TestSensor2\",\t\n  \"description\": \"Der zweite Counter!\",\n  \"properties\": {\n    \"sensor_id\": \"2\",\n    \"position\": \"Balkon\"\n },\n  \"Locations\": [\n    {\n      \"name\": \"Saarbrücken Uni\",\n      \"encodingType\": \"application/vnd.geo+json\",\n      \"description\": \"Saarbrücken Uni\",\n      \"location\": {\"coordinates\":[7.0477,49.2575],\"type\":\"Point\"}\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Things",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Things"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 4: POST an new Datastream",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "counting_insects",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "gost",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Gezählte Insekten\",\n  \"unitOfMeasurement\": {\n    \"name\": \"Zeitpunkt\",\n    \"symbol\": \"String\",\n    \"definition\": \"Zeitpunkt eines Insekt\"\n  },\n  \"Thing\": {\n    \"@iot.id\": 1\n  },\n  \"description\": \"Datastream für die gezählten Insekten (Zeitpunkt)\",\n  \"Sensor\": {\n    \"@iot.id\": 1\n  },\n  \"ObservedProperty\": {\n    \"@iot.id\": 1\n  },\n  \"observationType\": \"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation\"\n}"
+				},
+				"url": {
+					"raw": "https://insectcounter.zapto.org/gost/v1.0/Datastreams",
+					"protocol": "https",
+					"host": [
+						"insectcounter",
+						"zapto",
+						"org"
+					],
+					"path": [
+						"gost",
+						"v1.0",
+						"Datastreams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Sensor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "position",
+							"value": "Garten",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "abcd",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "49.2345",
+							"type": "text"
+						},
+						{
+							"key": "long",
+							"value": "6.95165",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/sensor/internal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sensor",
+						"internal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Sensor (not your own)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "abc",
+							"type": "text"
+						},
+						{
+							"key": "position",
+							"value": "keine",
+							"type": "text"
+						},
+						{
+							"key": "long",
+							"value": "49.5",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "7.1",
+							"type": "text"
+						},
+						{
+							"key": "sensor_id",
+							"value": "7",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/sensor/internal/put",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sensor",
+						"internal",
+						"put"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Sensor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "abc",
+							"type": "text"
+						},
+						{
+							"key": "position",
+							"value": "keine!",
+							"type": "text"
+						},
+						{
+							"key": "sensor_id",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/sensor/internal/put",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sensor",
+						"internal",
+						"put"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Sensor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "abc",
+							"type": "text"
+						},
+						{
+							"key": "sensor_id",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@test.de",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/sensor/internal/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sensor",
+						"internal",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>${locals.user_area}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js" crossorigin="anonymous>"></script>
+    <script src="/javascripts/helper_functions.js"></script>
+    <script src="/javascripts/helper_functions_user.js"></script>
+    <script src="/javascripts/user.js"></script>
+    </head>
+
+<body>
+  ${header}
+  ${flashMessage? `<div id="snackbar">${flashMessage}</div>`: ''}
+
+  <div class="pure-g">
+    <div class="pure-u-1">
+        ${token? `<a  class="pure-button pure-button-primary" href='data:,{"token": "${token}"}' download="token.json">Download token</a>`: ''}
+        ${ids? `<h2 id="token_ids">${ids}</h2>`: ''}
+        ${logout}
+        ${login}
+        ${create_user}
+        ${create_sensor}
+        ${update_sensor}
+        ${delete_sensor}
+        ${update_user}
+        ${delete_user}
+
+    </div>
+  </div>
+
+  ${footer}
+
+</body>
+
+</html>

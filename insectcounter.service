@@ -1,0 +1,10 @@
+[Unit]
+Description=insectcounter
+
+[Service]
+Type=simple
+ExecStart=/home/pi/project29/autostart_listener.sh
+User=pi
+
+[Install]
+WantedBy=multi-user.target

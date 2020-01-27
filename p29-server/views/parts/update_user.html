@@ -1,0 +1,35 @@
+${update_user_v ? `
+
+<h1>${locals.update_user}</h1>
+<form class="pure-form pure-form-aligned" id="update_user" name="update_user" action="/users/put" method="post">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required/>
+        </div>
+
+        <div class="pure-control-group">
+			<label for="password">${locals.password}:</label>
+            <input type="password" id="password" name="password" minlength=8 required/>
+        </div>
+
+        <div class="pure-control-group">
+			<label for="new_email">${locals.new_email}:</label>
+            <input type="text" id="new_email" name="new_email" required/>
+        </div>
+
+        <div class="pure-control-group">
+			<label for="new_password">${locals.new_password}:</label>
+            <input type="password" id="new_password" name="new_password" minlength=8 required/>
+        </div>
+
+        <div class="pure-controls">
+			<button type="submit" class="pure-button pure-button-primary">${locals.update_user}</button>
+        </div>
+    </fieldset>
+
+
+
+</form>
+
+` : ''}

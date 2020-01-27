@@ -1,0 +1,34 @@
+image: node:latest
+
+stages:
+    - build
+    - test
+    
+cache:
+    paths:
+        - p29-server/node_modules/
+
+
+install_backend_dependencies:
+    image: node:latest
+    stage: build
+    only:
+        changes:
+            - "p29-server/Dockerfile"
+            - "p29-server/package.json"
+            - "p29-server/docker-compose.yml"
+    script:
+        - cd p29-server
+        - npm install
+    artifacts:
+        paths:
+            - p29-server/node_modules/
+
+
+test_web_code:
+    image: node:latest
+    stage: test
+    script:
+        - cd p29-server
+        - npm test
+

@@ -1,0 +1,31 @@
+${update_sensor_v ? `
+
+<h1> ${locals.sensor_management} </h1>
+
+<h2> ${locals.change_sensor}</h2>
+${locals.long_lat_info}
+<form class="pure-form pure-form-aligned" id="update_sensor" name="update_sensor" action="/sensor/internal/put" method="post">
+    <fieldset>
+        <div class="pure-control-group">
+			<label for="name">${locals.sensor_name}:</label>
+            <input type="text" id="name" name="name" minlength=2 required/>
+        </div>
+
+
+        <div class="pure-control-group">
+			<label for="position">${locals.position}:</label>
+            <textarea id="position" name="position" cols="20" rows="5" required></textarea>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="sensor_id">Datastream ID:</label>
+            <input type="text" id="sensor_id" name="sensor_id" required/>
+        </div>
+
+        <div class="pure-controls">
+			<button type="submit" class="pure-button pure-button-primary">${locals.update_sensor}</button>
+        </div>
+    </fieldset>
+</form>
+
+` : ''}

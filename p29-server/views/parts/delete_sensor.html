@@ -1,0 +1,28 @@
+${delete_sensor_v ? `
+
+<h1>${locals.delete_sensor}</h1>
+<form class="pure-form pure-form-aligned" id="delete_sensor" name="delete_sensor" action="/sensor/internal/delete" method="post">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" pattern=".+@.+" required/>
+        </div>
+
+        <div class="pure-control-group">
+			<label for="password">${locals.password}</label>
+            <input type="password" id="password" name="password" minlength=8 required/>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="sensor_id">Datastream ID:</label>
+            <input type="text" id="sensor_id" name="sensor_id" required/>
+        </div>
+
+        <div class="pure-controls">
+			<button type="submit" class="pure-button pure-button-primary">${locals.confirm_delete}</button>
+        </div>
+
+    </fieldset>
+</form>
+
+` : ''}

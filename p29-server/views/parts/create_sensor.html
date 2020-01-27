@@ -1,0 +1,38 @@
+${create_sensor_v ? `
+
+<!-- Show form to create -->
+<h3>${locals.create_sensor}</h3>
+
+<form class="pure-form pure-form-aligned" id="create_sensor" name="create_sensor" action="/sensor/internal" method="post">
+    <fieldset>
+        <div class="pure-control-group">
+			<label for="name">${locals.sensor_name}</label>
+            <input type="text" id="name" name="name" minlength=2 required/>
+        </div>
+
+        <div class="pure-control-group">
+			<label for="name">${locals.longitude}:</label>
+            <input type="text" id="long" name="long" pattern="[0-9]+\.[0-9]+" required/>
+        </div>
+
+        <div class="pure-control-group">
+			<label for="name">${locals.latitude}:</label>
+            <input type="text" id="lat" name="lat" pattern="[0-9]+\.[0-9]+" required/>
+        </div>
+
+        <div class="pure-control-group">
+			<label for="position">${locals.position}:</label>
+            <textarea id="position" name="position" cols="20" rows="5" required></textarea>
+        </div>
+
+        <div class="pure-controls">
+            <label for="cb" class="pure-checkbox">
+				<input id="cb" type="checkbox" required> ${locals.terms}.${locals.sensor_persistence}
+            </label>
+
+			<button type="submit" class="pure-button pure-button-primary">${locals.create_sensor}</button>
+        </div>
+    </fieldset>
+</form>
+
+` : ''}

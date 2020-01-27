@@ -1,0 +1,9 @@
+node_modules/
+.idea/
+.nyc_output/
+package-lock.json
+gost_pw.json
+__pycache__/
+src/.coverage
+.conda_envs_dir_test
+savedfiles/
