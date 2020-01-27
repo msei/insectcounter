@@ -329,6 +329,24 @@ describe("Functional User Auth Tests",function() {
 			});
 	});
 
+       it("Should return data", function (done) {
+		const month = new Date().getMonth()+1;
+		const day = new Date().getDate();
+		const year = new Date().getFullYear();
+		const id = datastream_id;
+		const scale = "month";
+		const url = `/api/agg?sensorID=${id}&year=${year}&month=${month}${scale === "day"? `&day=${day}`: ""}`;
+
+		supertest(app)
+			.get(url)
+			.expect(200)
+			.end(function (err, res) {
+				res.status.should.equal(200);
+				if (err) return done(err);
+				done();
+			});
+        });
+
 	it("Delete a Sensor Fail", function(done) {
 		supertest(app)
 			.post('/sensor/internal/delete')
