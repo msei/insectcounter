@@ -6,7 +6,7 @@ $(document).ready(function() {
     // Get the current data
     let currDate = new Date();
 
-    let scale = helpers.locals.day_scale;
+    let scale = "day";
     console.log(scale);
 
     // Change date by -1 if clicked on previous
@@ -23,11 +23,12 @@ $(document).ready(function() {
 
     // Change scale to monthly or daily
     $("#changeScale").on("click", function () {
-        scale = scale === helpers.locals.day_scale ? helpers.locals.month_scale : helpers.locals.day_scale;
-        let otherScale = scale === helpers.locals.day_scale  ? helpers.locals.month_scale : helpers.locals.day_scale ;
+        scale = scale === "day" ? "month" : "day";
+        let otherScale = scale === "day" ? "month" : "day";
         $("#changeScale").text(`${helpers.locals.change_scale} ${otherScale} ${helpers.locals.scale}`);
-        $("#next").text(`${helpers.locals.next} ${scale}`);
-        $("#prev").text(`${helpers.locals.previous} ${scale}`);
+        let show_scale = scale === "day" ? helpers.locals.day_scale : helpers.locals.month_scale;
+        $("#next").text(`${helpers.locals.next} ${show_scale}`);
+        $("#prev").text(`${helpers.locals.previous} ${show_scale}`);
         load_and_draw(scale, currDate, id);
     });
 
