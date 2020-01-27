@@ -3,7 +3,7 @@
 Bitte das ganze README lesen, bevor mit der Installation/Ausführung begonnen wird.
 Je nach Use-Case müssen nur Teile der Anleitung durchgeführt werden und verschiedene Anpassungen durchgeführt werden.
 
-TODO: grundsätzliches Projekt Setting beschreiben?
+Diese Website ist Teil eines Projektes von Ecocurious zum Zählen von Insekten in unserer Heimat - ohne, dass diese dabei eingefangen werden oder sterben müssen! [**Hier**](https://ecocurious.de/projekte/insect-counts/) kannst du mehr erfahren!
 
 Das Projekt besteht aus 4 Teilen:
 1. Einer Website auf der die gezählten Insekten pro Sensor visualisiert werden und User Sensoren anlegen können.
