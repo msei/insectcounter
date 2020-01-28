@@ -1,4 +1,4 @@
-tensorflow==2.0.0
+tensorflow==2.0.1
 uuid==1.30
 numpy==1.16.4
 argparse==1.4.0
