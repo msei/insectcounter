@@ -35,7 +35,7 @@
 					"raw": "{\n  \"name\": \"TestSensor2\",\t\n  \"description\": \"Der zweite Counter!\",\n  \"properties\": {\n    \"sensor_id\": \"2\",\n    \"position\": \"Balkon\"\n },\n  \"Locations\": [\n    {\n      \"name\": \"Saarbrücken Uni\",\n      \"encodingType\": \"application/vnd.geo+json\",\n      \"description\": \"Saarbrücken Uni\",\n      \"location\": {\"coordinates\":[7.0477,49.2575],\"type\":\"Point\"}\n    }\n  ]\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Things",
+					"raw": "http://localhost:8080/gost/v1.0/Things",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -81,7 +81,7 @@
 					"raw": "{\n  \"name\": \"TestSensor2\",\t\n  \"description\": \"Der zweite Counter!\",\n  \"properties\": {\n    \"sensor_id\": \"2\",\n    \"position\": \"Balkon\"\n },\n  \"Locations\": [\n    {\n      \"name\": \"Saarbrücken Uni\",\n      \"encodingType\": \"application/vnd.geo+json\",\n      \"description\": \"Saarbrücken Uni\",\n      \"location\": {\"coordinates\":[7.0477,49.2575],\"type\":\"Point\"}\n    }\n  ]\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Things",
+					"raw": "http://localhost:8080/gost/v1.0/Things",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -127,7 +127,7 @@
 					"raw": "{\n  \"name\": \"TestSensor2\",\t\n  \"description\": \"Der zweite Counter!\",\n  \"properties\": {\n    \"sensor_id\": \"2\",\n    \"position\": \"Balkon\"\n },\n  \"Locations\": [\n    {\n      \"name\": \"Saarbrücken Uni\",\n      \"encodingType\": \"application/vnd.geo+json\",\n      \"description\": \"Saarbrücken Uni\",\n      \"location\": {\"coordinates\":[7.0477,49.2575],\"type\":\"Point\"}\n    }\n  ]\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Things",
+					"raw": "http://localhost:8080/gost/v1.0/Things",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
