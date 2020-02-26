@@ -1,6 +1,6 @@
 #! /bin/sh
 
-cd /home/pi/project29
+cd /home/pi/insectcounter
 
 export $(egrep -v '^#' .env | xargs)
 

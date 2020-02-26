@@ -3,7 +3,7 @@ Description=insectcounter
 
 [Service]
 Type=simple
-ExecStart=/home/pi/project29/autostart_listener.sh
+ExecStart=/home/pi/insectcounter/autostart_listener.sh
 User=pi
 
 [Install]

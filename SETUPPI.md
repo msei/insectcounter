@@ -31,8 +31,8 @@ Einen Bildschirm, Tastatur und Maus.
 2. Die Installations [.zip](https://github.com/insectcounter/insectcounter/archive/master.zip) Datei herunterladen und in einem neu angelegten Ordner entpacken.
     - `$ wget repo.zip`
     - `$ unzip repo.zip`
-    - Alternativ das Repository clonen: `$ git clone https://github.com/insectcounter/insectcounter.git`
-3. In den Ordner wechseln: `$ cd project29`
+    - Alternativ das Repository clonen: `$ git clone https://github.com/ecocurious/insectcounter.git`
+3. In den Ordner wechseln: `$ cd insectcounter`
 4. Änderungen durchführen `$ nano .env`
 5. Den Installationsbefehl ausführen `$ sh setup.sh`
 
@@ -40,7 +40,7 @@ Einen Bildschirm, Tastatur und Maus.
 ## Daten hinzufügen
 1. Nutzer und Sensor erstellen und Token herunterladen.
 2. (Optional) Neue Model.zip herunterladen.
-3. Beides unter `/home/pi/project29/model` abspeichern und alte Files löschen/überschreiben.
+3. Beides unter `/home/pi/insectcounter/model` abspeichern und alte Files löschen/überschreiben.
 4. Neustarten 
 
 ## Änderungen hinzufügen
