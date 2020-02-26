@@ -173,7 +173,7 @@
 					"raw": "\n{\n  \"name\": \"Anzahl Insekten\",\n  \"description\": \"Anzahl Insekten\",\n  \"definition\": \"Dictionary mit InsektenArt Key und Anzahl Value\"\n}\n"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/ObservedProperties",
+					"raw": "http://localhost:8080/gost/v1.0/ObservedProperties",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -219,7 +219,7 @@
 					"raw": "{\n  \"name\":\"Optisches Mikrofon\",\n  \"encodingType\": \"application/pdf\",\n  \"metadata\": \"webseite sensor oder von uns mit ml model version?.pdf\",\n  \"description\": \"Der Sensor für die Aufnahme\"\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Sensors",
+					"raw": "http://localhost:8080/gost/v1.0/Sensors",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -265,7 +265,7 @@
 					"raw": "{\n  \"name\": \"Gezählte Insekten\",\n  \"unitOfMeasurement\": {\n    \"name\": \"Zeitpunkt\",\n    \"symbol\": \"String\",\n    \"definition\": \"Zeitpunkt eines Insekt\"\n  },\n  \"Thing\": {\n    \"@iot.id\": 1\n  },\n  \"description\": \"Datastream für die gezählten Insekten (Zeitpunkt)\",\n  \"Sensor\": {\n    \"@iot.id\": 1\n  },\n  \"ObservedProperty\": {\n    \"@iot.id\": 1\n  },\n  \"observationType\": \"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation\"\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Datastreams",
+					"raw": "http://localhost:8080/gost/v1.0/Datastreams",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -311,7 +311,7 @@
 					"raw": "{\n  \"name\": \"Gezählte Insekten\",\n  \"unitOfMeasurement\": {\n    \"name\": \"Zeitpunkt\",\n    \"symbol\": \"String\",\n    \"definition\": \"Zeitpunkt eines Insekt\"\n  },\n  \"Thing\": {\n    \"@iot.id\": 1\n  },\n  \"description\": \"Datastream für die gezählten Insekten (Zeitpunkt)\",\n  \"Sensor\": {\n    \"@iot.id\": 1\n  },\n  \"ObservedProperty\": {\n    \"@iot.id\": 1\n  },\n  \"observationType\": \"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation\"\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Datastreams",
+					"raw": "http://localhost:8080/gost/v1.0/Datastreams",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -357,7 +357,7 @@
 					"raw": "{\n  \"name\": \"Gezählte Insekten\",\n  \"unitOfMeasurement\": {\n    \"name\": \"Zeitpunkt\",\n    \"symbol\": \"String\",\n    \"definition\": \"Zeitpunkt eines Insekt\"\n  },\n  \"Thing\": {\n    \"@iot.id\": 1\n  },\n  \"description\": \"Datastream für die gezählten Insekten (Zeitpunkt)\",\n  \"Sensor\": {\n    \"@iot.id\": 1\n  },\n  \"ObservedProperty\": {\n    \"@iot.id\": 1\n  },\n  \"observationType\": \"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation\"\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Datastreams",
+					"raw": "http://localhost:8080/gost/v1.0/Datastreams",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -403,7 +403,7 @@
 					"raw": "{\n  \"result\": \"Fliege\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"raw": "http://localhost:8080/gost/v1.0/Observations",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -449,7 +449,7 @@
 					"raw": "{\n  \"result\": \"Fliege\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"raw": "http://localhost:8080/gost/v1.0/Observations",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -495,7 +495,7 @@
 					"raw": "{\n  \"result\": \"Fliege\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"raw": "http://localhost:8080/gost/v1.0/Observations",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -541,7 +541,7 @@
 					"raw": "{\n  \"result\": \"Biene\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"raw": "http://localhost:8080/gost/v1.0/Observations",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -587,7 +587,7 @@
 					"raw": "{\n  \"result\": \"Biene\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"raw": "http://localhost:8080/gost/v1.0/Observations",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -633,7 +633,7 @@
 					"raw": "{\n  \"result\": \"Biene\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"raw": "http://localhost:8080/gost/v1.0/Observations",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -679,7 +679,7 @@
 					"raw": "{\n  \"result\": \"Heimchen\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"raw": "http://localhost:8080/gost/v1.0/Observations",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -725,7 +725,7 @@
 					"raw": "{\n  \"result\": \"Heimchen\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"raw": "http://localhost:8080/gost/v1.0/Observations",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
@@ -771,7 +771,7 @@
 					"raw": "{\n  \"result\": \"Heimchen\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "https://insectcounter.zapto.org/gost/v1.0/Observations",
+					"raw": "http://localhost:8080/gost/v1.0/Observations",
 					"protocol": "https",
 					"host": [
 						"insectcounter",
