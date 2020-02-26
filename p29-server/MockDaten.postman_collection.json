@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "e4ce1300-7ea1-43ba-8824-752781bb0a68",
+		"_postman_id": "04fb3c0b-f7a5-424d-88de-39274cc7912a",
 		"name": "MockDaten",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -13,12 +13,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -35,15 +35,13 @@
 					"raw": "{\n  \"name\": \"TestSensor2\",\t\n  \"description\": \"Der zweite Counter!\",\n  \"properties\": {\n    \"sensor_id\": \"2\",\n    \"position\": \"Balkon\"\n },\n  \"Locations\": [\n    {\n      \"name\": \"Saarbrücken Uni\",\n      \"encodingType\": \"application/vnd.geo+json\",\n      \"description\": \"Saarbrücken Uni\",\n      \"location\": {\"coordinates\":[7.0477,49.2575],\"type\":\"Point\"}\n    }\n  ]\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Things",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Things",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Things"
 					]
@@ -59,12 +57,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -81,15 +79,13 @@
 					"raw": "{\n  \"name\": \"TestSensor2\",\t\n  \"description\": \"Der zweite Counter!\",\n  \"properties\": {\n    \"sensor_id\": \"2\",\n    \"position\": \"Balkon\"\n },\n  \"Locations\": [\n    {\n      \"name\": \"Saarbrücken Uni\",\n      \"encodingType\": \"application/vnd.geo+json\",\n      \"description\": \"Saarbrücken Uni\",\n      \"location\": {\"coordinates\":[7.0477,49.2575],\"type\":\"Point\"}\n    }\n  ]\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Things",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Things",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Things"
 					]
@@ -105,12 +101,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -127,15 +123,13 @@
 					"raw": "{\n  \"name\": \"TestSensor2\",\t\n  \"description\": \"Der zweite Counter!\",\n  \"properties\": {\n    \"sensor_id\": \"2\",\n    \"position\": \"Balkon\"\n },\n  \"Locations\": [\n    {\n      \"name\": \"Saarbrücken Uni\",\n      \"encodingType\": \"application/vnd.geo+json\",\n      \"description\": \"Saarbrücken Uni\",\n      \"location\": {\"coordinates\":[7.0477,49.2575],\"type\":\"Point\"}\n    }\n  ]\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Things",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Things",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Things"
 					]
@@ -151,12 +145,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -173,15 +167,13 @@
 					"raw": "\n{\n  \"name\": \"Anzahl Insekten\",\n  \"description\": \"Anzahl Insekten\",\n  \"definition\": \"Dictionary mit InsektenArt Key und Anzahl Value\"\n}\n"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/ObservedProperties",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/ObservedProperties",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"ObservedProperties"
 					]
@@ -197,12 +189,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -219,15 +211,13 @@
 					"raw": "{\n  \"name\":\"Optisches Mikrofon\",\n  \"encodingType\": \"application/pdf\",\n  \"metadata\": \"webseite sensor oder von uns mit ml model version?.pdf\",\n  \"description\": \"Der Sensor für die Aufnahme\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Sensors",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Sensors",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Sensors"
 					]
@@ -243,12 +233,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -265,15 +255,13 @@
 					"raw": "{\n  \"name\": \"Gezählte Insekten\",\n  \"unitOfMeasurement\": {\n    \"name\": \"Zeitpunkt\",\n    \"symbol\": \"String\",\n    \"definition\": \"Zeitpunkt eines Insekt\"\n  },\n  \"Thing\": {\n    \"@iot.id\": 1\n  },\n  \"description\": \"Datastream für die gezählten Insekten (Zeitpunkt)\",\n  \"Sensor\": {\n    \"@iot.id\": 1\n  },\n  \"ObservedProperty\": {\n    \"@iot.id\": 1\n  },\n  \"observationType\": \"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Datastreams",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Datastreams",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Datastreams"
 					]
@@ -289,12 +277,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -311,15 +299,13 @@
 					"raw": "{\n  \"name\": \"Gezählte Insekten\",\n  \"unitOfMeasurement\": {\n    \"name\": \"Zeitpunkt\",\n    \"symbol\": \"String\",\n    \"definition\": \"Zeitpunkt eines Insekt\"\n  },\n  \"Thing\": {\n    \"@iot.id\": 1\n  },\n  \"description\": \"Datastream für die gezählten Insekten (Zeitpunkt)\",\n  \"Sensor\": {\n    \"@iot.id\": 1\n  },\n  \"ObservedProperty\": {\n    \"@iot.id\": 1\n  },\n  \"observationType\": \"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Datastreams",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Datastreams",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Datastreams"
 					]
@@ -335,12 +321,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -357,15 +343,13 @@
 					"raw": "{\n  \"name\": \"Gezählte Insekten\",\n  \"unitOfMeasurement\": {\n    \"name\": \"Zeitpunkt\",\n    \"symbol\": \"String\",\n    \"definition\": \"Zeitpunkt eines Insekt\"\n  },\n  \"Thing\": {\n    \"@iot.id\": 1\n  },\n  \"description\": \"Datastream für die gezählten Insekten (Zeitpunkt)\",\n  \"Sensor\": {\n    \"@iot.id\": 1\n  },\n  \"ObservedProperty\": {\n    \"@iot.id\": 1\n  },\n  \"observationType\": \"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Datastreams",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Datastreams",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Datastreams"
 					]
@@ -381,12 +365,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -403,15 +387,13 @@
 					"raw": "{\n  \"result\": \"Fliege\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Observations",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Observations",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Observations"
 					]
@@ -427,12 +409,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -449,15 +431,13 @@
 					"raw": "{\n  \"result\": \"Fliege\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Observations",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Observations",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Observations"
 					]
@@ -473,12 +453,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -495,15 +475,13 @@
 					"raw": "{\n  \"result\": \"Fliege\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Observations",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Observations",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Observations"
 					]
@@ -519,12 +497,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -541,15 +519,13 @@
 					"raw": "{\n  \"result\": \"Biene\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Observations",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Observations",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Observations"
 					]
@@ -565,12 +541,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -587,15 +563,13 @@
 					"raw": "{\n  \"result\": \"Biene\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Observations",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Observations",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Observations"
 					]
@@ -611,12 +585,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -633,15 +607,13 @@
 					"raw": "{\n  \"result\": \"Biene\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Observations",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Observations",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Observations"
 					]
@@ -657,12 +629,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -679,15 +651,13 @@
 					"raw": "{\n  \"result\": \"Heimchen\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Observations",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Observations",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Observations"
 					]
@@ -703,12 +673,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -725,15 +695,13 @@
 					"raw": "{\n  \"result\": \"Heimchen\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Observations",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Observations",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Observations"
 					]
@@ -749,12 +717,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "counting_insects",
+							"value": "postgres",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "gost",
+							"value": "postgres",
 							"type": "string"
 						}
 					]
@@ -771,15 +739,13 @@
 					"raw": "{\n  \"result\": \"Heimchen\",\n  \"Datastream\": {\n    \"@iot.id\": 1\n  }\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/gost/v1.0/Observations",
-					"protocol": "https",
+					"raw": "http://localhost:8080/v1.0/Observations",
+					"protocol": "http",
 					"host": [
-						"insectcounter",
-						"zapto",
-						"org"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"gost",
 						"v1.0",
 						"Observations"
 					]
